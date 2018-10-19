@@ -5,8 +5,6 @@ $(document).ready(function() {
   $("form#trackSuggest").submit(function(event){
     event.preventDefault();
 
-
-
     var q1 = $("#question1").val();
     $("#question1").change(function(){
     });
@@ -26,12 +24,11 @@ $(document).ready(function() {
     var trackTitle;
     var trackImg;
 
-
     if ( q1 === "independent" ) {
-      if ( q2 === "back" ) {
-        if ( q3 === "function" ) {
-          if ( q4 ===  "yes" ) {
-            if ( q5 === "small" ) {
+      if ( q2 === "back" ||"front" ) {
+        if ( q3 === "function" || "look" ) {
+          if ( q4 ===  "yes" || "no" ) {
+            if ( q5 === "small" || "large" ) {
               trackTitle="Ruby/Rails";
               trackImg="img/rubyRails.png";
             }
@@ -39,93 +36,33 @@ $(document).ready(function() {
         }
       }
     }
-    else if (q1 === "team") {
-      if (q2 === "back"){
-        if (q3 === "function"){
-          if (q4 === "yes"){
-            if (q5 === "small"){
-              trackTitle="C#";
-              trackImg="img/csharp.png";
+      else if (q1 === "team") {
+        if (q2 === "back" || "front") {
+          if (q3 === "function" || "look") {
+            if (q4 === "yes" || "no") {
+              if (q5 === "small" || "large") {
+                trackTitle="C#";
+                trackImg="img/csharp.png";
+              }
             }
           }
         }
       }
-    }
-
-
-
-    // else if (q1 === "team") {
-      // trackTitle="C#"
-      // trackImg="img/c#.png"
-    // }
-
-
-    $(".output").show();
-    $("#output img").attr("src", trackImg)
-    $("#output .card-body").html("<h5>"+trackTitle+"</h5>")
-    // debugger
+      if ( q1 === "team" || "independent"){
+        if ( q2 === "front"){
+          if (q3 === "function" || "look"){
+            if (q4 === "yes" || "no"){
+              if (q4 === "large" || "small"){
+                trackTitle="CSS/Design"
+                trackImg="img/cssDesign.png"
+              }
+            }
+          }
+        }
+      }
+      $(".output").show();
+      $("#output img").attr("src", trackImg)
+      $("#output .card-body").html("<h5>"+trackTitle+"</h5>")
+      debugger
+    });
   });
-});
-
-
-
-
-
-  //
-  //   var trackTitle;
-  //   var trackImg;
-  //
-
-  //
-  //
-  //   if ( q1 === "independent" ){
-  //     if ( q2 === "back" ) {
-  //       if ( q3 === "function" ) {
-  //         if ( q4 ===  "yes" ) {
-  //           if ( q5 === "small"){
-  //             trackTitle="Ruby/Rails"
-  //             trackImg="img/rubyRails.png"
-  //
-  //           }
-  //         }
-  //       }
-  //     }
-  //   } else if ( q1 === "team" ){
-  //     if (q2 === "back") {
-  //       if (q3 === "function") {
-  //         if (q4 === "yes"){
-  //           if ( q5 === "small"){
-  //             trackTitle="Ruby/Rails"
-  //             trackImg="img/rubyRails.png"
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-
-  //   $("#output").show();
-  //
-
-  // })
-
-// });
-    // $("#quetion1").change(function(){
-    //   q1 = $("#question1").val();
-    //   ("#question2").show();
-    //   console.log()
-    // })
-    // $("#quetion2").change(function(){
-    //   q1 = $("#question2").val();
-    //   ("#question3").show();
-    // })
-    // $("#quetion3").change(function(){
-    //   q1 = $("#question3").val();
-    //   ("#question4").show();
-    // })
-    // $("#quetion4").change(function(){
-    //   q1 = $("#question4").val();
-    //   ("#question5").show();
-
-    // $("#inputName").change(function(){
-    //   $("#inputName").removeClass("alert-danger");
-    //   console.log()
