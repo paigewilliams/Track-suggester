@@ -10,7 +10,11 @@
 
 ## Setup/Installation Requirements
 
-  1. run git clone in Terminal
+  https://paigewilliams.github.io/Track-suggester/
+
+#### OR
+
+  1. Run git clone in Terminal
   2. Open in browser
 
 ## Known Bugs
