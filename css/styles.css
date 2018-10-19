@@ -1,27 +1,35 @@
+h1 {
+  text-align: left;
+}
+
 .content{
   margin: 75px auto;
   text-align: left;
 }
+
 .output {
   margin-top: 50px;
+  padding: 20px;
   display: none;
 }
 
-.card {
+.card .card-header {
   padding: 50px;
   margin: 50px;
 }
 
-h1 {
-  text-align: left;
+.card-img-top {
+  width: 30rem;
+  margin: 60px;
+  float: right;
 }
 
 #epicodus {
   float: right;
 }
 
- #top {
-   margin-top: 100px auto;
-   padding-bottom: 30px;
-   text align: left;
- }
+#top {
+  margin-top: 100px auto;
+  padding-bottom: 30px;
+  text align: left;
+}

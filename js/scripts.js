@@ -25,7 +25,7 @@ $(document).ready(function() {
     var trackText
 
     if ( q1 === "independent" ) {
-      if ( q2 === "back" ||"front" ) {
+      if ( q2 === "back" || "front" ) {
         if ( q3 === "function" || "look" ) {
           if ( q4 ===  "yes" || "no" ) {
             if ( q5 === "small" || "large" ) {
@@ -37,11 +37,11 @@ $(document).ready(function() {
         }
       }
     }
-      else if (q1 === "team") {
-        if (q2 === "back" || "front") {
-          if (q3 === "function" || "look") {
-            if (q4 === "yes" || "no") {
-              if (q5 === "small" || "large") {
+      else if ( q1 === "team" ) {
+        if ( q2 === "back" ) {
+          if ( q3 === "function" || "look" ) {
+            if ( q4 === "yes" || "no" ) {
+              if ( q5 === "large" ) {
                 trackTitle="C#/.NET";
                 trackImg="img/c-sharp.jpg";
                 trackText="You belong working among bigger established businesses, often building internal software. C#/.NET is for you! ";
@@ -50,11 +50,11 @@ $(document).ready(function() {
           }
         }
       }
-      if ( q1 === "team" || "independent"){
-        if ( q2 === "front"){
-          if (q3 === "function" || "look"){
-            if (q4 === "yes" || "no"){
-              if (q4 === "large" || "small"){
+      if ( q1 === "team" || "independent" ) {
+        if ( q2 === "front" ) {
+          if ( q3 === "function" || "look" ) {
+            if ( q4 === "yes" || "no" ) {
+              if ( q5 === "large" || "small" ) {
                 trackTitle="CSS/Design"
                 trackImg="img/cssDesign.png"
                 trackText="You like to spend your time making things look good and work well, obsess over layouts, navigation, colors and design. CSS and Design is for you!"
@@ -75,19 +75,11 @@ $(document).ready(function() {
           }
         }
       }
-      if (!$("#inputName").val())
-       return false;
-      // $("#inputName").change(function(){
-      //   $("#inputName").removeClass("alert-danger")
-      // });
-
-
       $(".nameInput").text(name);
       $("#output img").attr("src", trackImg);
-      $("#output .card-body .card-header #title").html("<h5>"+trackTitle+"</h5>");
+      $("#output .card-body .card-header #title").html("<h3>"+trackTitle+"</h3>");
       $("#output .card-body .card-text").html("<p>"+trackText+"</p>");
-       $(".output").show();
-
+      $(".output").show();
 
       event.preventDefault();
     });
