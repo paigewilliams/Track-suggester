@@ -20,8 +20,22 @@ $(document).ready(function() {
     var q5 = $("#question5").val();
     $("#question5 ").change(function(){
     });
-    debugger;
-  });
+
+    if ( q1 === "independent" ){
+      if ( q2 === "back" ) {
+        if ( q3 === "function" ) {
+          if ( q4 ===  "yes" ) {
+            if ( q5 === "small"){
+              // trackTitle="Ruby/Rails"
+              // trackImg="img/rubyRails.png"
+            // }
+            console.log("working");
+          }
+        }
+      }
+    }
+  }
+ });
 });
 
 
