@@ -24,6 +24,7 @@ $(document).ready(function() {
 
     var trackTitle;
     var trackImg;
+    var trackText
 
     if ( q1 === "independent" ) {
       if ( q2 === "back" ||"front" ) {
@@ -44,6 +45,7 @@ $(document).ready(function() {
               if (q5 === "small" || "large") {
                 trackTitle="C#";
                 trackImg="img/csharp.png";
+                trackText="Ruby!";
               }
             }
           }
@@ -56,6 +58,7 @@ $(document).ready(function() {
               if (q4 === "large" || "small"){
                 trackTitle="CSS/Design"
                 trackImg="img/cssDesign.png"
+                trackText="You like to spend your time making things look good and work well, obsess over layouts, navigation, colors and design."
               }
             }
           }
@@ -74,19 +77,21 @@ $(document).ready(function() {
         }
       }
 
-      $("#inputName").change(function(){
-        $("#inputName").removeClass("alert-danger")
-      });
+      // $("#inputName").change(function(){
+      //   $("#inputName").removeClass("alert-danger")
+      // });
 
 
       $(".nameInput").text(name);
-      $("#output img").attr("src", trackImg)
-      $("#output .card-body").html("<h5>"+trackTitle+"</h5>")
-      $(".output").show();
-        if (!$("#inputName").val(){
-          $("#inputName").addClass("alert-danger")
-          return false;
-        })
+      $("#output img").attr("src", trackImg);
+      $("#output .card-body").html("<h5>"+trackTitle+"</h5>");
+      $("#output .card-body .card-text").html("<p>"+trackText+"</p>");
+       $(".output").show();
+      //   if (!$("#inputName").val(){
+      //     $("#inputName").addClass("alert-danger")
+      //     return false;
+      //   })
+      debugger
       event.preventDefault();
     });
   });

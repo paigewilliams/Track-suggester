@@ -1,11 +1,13 @@
 .content{
-  margin: 100px;
+  margin: 100px auto;
+  text-align: left;
 }
 .output {
   margin-top: 50px;
   display: none;
 }
 
-/* .following {
-  display: none;
-} */
+.card {
+  padding: 50px;
+  margin: 50px;
+}
