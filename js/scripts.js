@@ -61,11 +61,32 @@ $(document).ready(function() {
           }
         }
       }
+      if (q1 === ""){
+        if (q2 === ""){
+          if (q3 === ""){
+            if (q4 === ""){
+              if (q5 === ""){
+                return false;
 
-      $(".output").show();
+              }
+            }
+          }
+        }
+      }
+
+      $("#inputName").change(function(){
+        $("#inputName").removeClass("alert-danger")
+      });
+
+
       $(".nameInput").text(name);
       $("#output img").attr("src", trackImg)
       $("#output .card-body").html("<h5>"+trackTitle+"</h5>")
+      $(".output").show();
+        if (!$("#inputName").val(){
+          $("#inputName").addClass("alert-danger")
+          return false;
+        })
       event.preventDefault();
     });
   });
