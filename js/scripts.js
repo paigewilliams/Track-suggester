@@ -33,6 +33,7 @@ $(document).ready(function() {
             if ( q5 === "small" || "large" ) {
               trackTitle="Ruby/Rails";
               trackImg="img/rubyRails.png";
+              trackText="You should be building interactive web applications, perhaps for a startup or small company. Ruby/Rails is for you!"
             }
           }
         }
@@ -43,9 +44,9 @@ $(document).ready(function() {
           if (q3 === "function" || "look") {
             if (q4 === "yes" || "no") {
               if (q5 === "small" || "large") {
-                trackTitle="C#";
-                trackImg="img/csharp.png";
-                trackText="Ruby!";
+                trackTitle="C#/.NET";
+                trackImg="img/c-sharp.jpg";
+                trackText="You belong wrkking among bigger established businesses, often building internal software. C#/.NET is for you! ";
               }
             }
           }
@@ -58,7 +59,7 @@ $(document).ready(function() {
               if (q4 === "large" || "small"){
                 trackTitle="CSS/Design"
                 trackImg="img/cssDesign.png"
-                trackText="You like to spend your time making things look good and work well, obsess over layouts, navigation, colors and design."
+                trackText="You like to spend your time making things look good and work well, obsess over layouts, navigation, colors and design. CSS and Design is for you!"
               }
             }
           }
@@ -84,14 +85,12 @@ $(document).ready(function() {
 
       $(".nameInput").text(name);
       $("#output img").attr("src", trackImg);
-      $("#output .card-body").html("<h5>"+trackTitle+"</h5>");
+      $("#output .card-body #title").html("<h5>"+trackTitle+"</h5>");
       $("#output .card-body .card-text").html("<p>"+trackText+"</p>");
        $(".output").show();
-      //   if (!$("#inputName").val(){
-      //     $("#inputName").addClass("alert-danger")
-      //     return false;
-      //   })
-      debugger
+        if (!$("#inputName").val())
+         return false;
+
       event.preventDefault();
     });
   });
