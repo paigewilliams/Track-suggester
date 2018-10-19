@@ -3,5 +3,9 @@
 }
 .card {
   margin-top: 50px;
-  /* display: none; */
+  display: none;
 }
+
+/* .following {
+  display: none;
+} */
