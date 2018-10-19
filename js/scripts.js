@@ -3,7 +3,8 @@
 //Front-end (User-Interface) logic
 $(document).ready(function() {
   $("form#trackSuggest").submit(function(event){
-    event.preventDefault();
+
+    var name =$("input#inputName").val();
 
     var q1 = $("#question1").val();
     $("#question1").change(function(){
@@ -60,9 +61,11 @@ $(document).ready(function() {
           }
         }
       }
+
       $(".output").show();
+      $(".nameInput").text(name);
       $("#output img").attr("src", trackImg)
       $("#output .card-body").html("<h5>"+trackTitle+"</h5>")
-      debugger
+      event.preventDefault();
     });
   });
