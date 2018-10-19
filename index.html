@@ -10,53 +10,67 @@
   </head>
   <body>
     <div class="container">
-      <div class="row">
-        <h1>Epicodus Track Suggester App</h1>
-        <h3>Take this short quiz to find out with Epicodus track is best for you!</h3>
+      <div class="content">
+        <div class="row">
+          <h1>Epicodus Track Suggester App</h1>
+          <h3>Take this short quiz to find out with Epicodus track is best for you!</h3>
+        </div>
+        <div class="row">
+          <form id="trackSuggest">
+            <div class="form-group">
+              <label for="inputName">Please enter your name</label>
+              <input type="text" class="form-control form-control-lg" id="inputName" placeholder="Name">
+            </div>
+            <div class="form-group">
+              <label for="question1">1. Do you like working independently or in a team?</label>
+              <select class="form-control" id="question1">
+                <option>Independently</option>
+                <option>In a team</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="question2">2. Do you prefer back-end or front-end devlopment?</label>
+              <select class="form-control" id="question2">
+                <option>Back-end</option>
+                <option>Front-end</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="question3">3. Do you enjoy making things look nice or making them function?</label>
+              <select class="form-control" id="question3">
+                <option>Look nice</option>
+                <option>Function</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="question4">4. Do you enjoy working with dynamic content?</label>
+              <select class="form-control" id="question4">
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="question5">5. Would you rather work for a large or small company?</label>
+              <select class="form-control" id="question5">
+                <option>Large Company</option>
+                <option>Small Company</option>
+              </select>
+            </div>
+            <div class="output">
+              <button type="button" class="btn btn-info">Submit</button>
+              <h3>Congratulations<span class="nameInput"</span> you got:</h3>
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
-      <div class="row">
-        <form id="trackSuggest">
-          <div class="form-group">
-            <label for="inputName">Please enter your name</label>
-            <input type="text" class="form-control form-control-lg" id="inputName" placeholder="Name">
-          </div>
-          <div class="form-group">
-            <label for="question1">1. Do you like working independently or in a team?</label>
-            <select class="form-control" id="question1">
-              <option>Independently</option>
-              <option>In a team</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="question2">2. Do you prefer back-end or front-end devlopment?</label>
-            <select class="form-control" id="question2">
-              <option>Back-end</option>
-              <option>Front-end</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="question3">3. Do you enjoy making things look nice or making them function?</label>
-            <select class="form-control" id="question3">
-              <option>Look nice</option>
-              <option>Function</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="question4">4. Do you enjoy working with dynamic content?</label>
-            <select class="form-control" id="question4">
-              <option>Yes</option>
-              <option>No</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="question5">5. Would you rather work for a large or small company?</label>
-            <select class="form-control" id="question5">
-              <option>Large Company</option>
-              <option>Small Company</option>
-            </select>
-          </div>
-        </form>
-      </div>
+
 
 
 
