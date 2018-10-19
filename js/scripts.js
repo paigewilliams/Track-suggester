@@ -63,11 +63,11 @@ $(document).ready(function() {
           }
         }
       }
-      if (q1 === ""){
-        if (q2 === ""){
-          if (q3 === ""){
-            if (q4 === ""){
-              if (q5 === ""){
+      if ( q1 === "" ) {
+        if ( q2 === "" ) {
+          if ( q3 === "" ) {
+            if ( q4 === "" ) {
+              if ( q5 === "" ) {
                 return false;
 
               }
