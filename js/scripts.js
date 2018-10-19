@@ -5,6 +5,8 @@ $(document).ready(function() {
   $("form#trackSuggest").submit(function(event){
     event.preventDefault();
 
+
+
     var q1 = $("#question1").val();
     $("#question1").change(function(){
     });
@@ -21,52 +23,53 @@ $(document).ready(function() {
     $("#question5 ").change(function(){
     });
 
-    if ( q1 === "independent" ){
+    var trackTitle;
+    var trackImg;
+
+
+    if ( q1 === "independent" ) {
       if ( q2 === "back" ) {
         if ( q3 === "function" ) {
           if ( q4 ===  "yes" ) {
-            if ( q5 === "small"){
-
-              trackTitle="Ruby/Rails"
-              trackImg="img/rubyRails.png"
+            if ( q5 === "small" ) {
+              trackTitle="Ruby/Rails";
+              trackImg="img/rubyRails.png";
             }
           }
         }
       }
     }
+    else if (q1 === "team") {
+      if (q2 === "back"){
+        if (q3 === "function"){
+          if (q4 === "yes"){
+            if (q5 === "small"){
+              trackTitle="C#";
+              trackImg="img/csharp.png";
+            }
+          }
+        }
+      }
+    }
+
+
+
+    // else if (q1 === "team") {
+      // trackTitle="C#"
+      // trackImg="img/c#.png"
+    // }
+
+
     $(".output").show();
     $("#output img").attr("src", trackImg)
     $("#output .card-body").html("<h5>"+trackTitle+"</h5>")
+    // debugger
   });
 });
 
 
 
 
-
-  // $("#question1").change(function(){
-  //   q1 = $("#question1").val();
-  //   console.log("hi");
-
-  //   $("#question2").change(function(){
-  //     q2 = $("#question2").val();
-  //     console.log("hii");
-  //   })
-  //   $("#question3").change(function(){
-  //     q3 = $("#question3").val();
-  //     console.log("hiiii");
-  //   })
-  //   $("#question4").change(function(){
-  //     q4 = $("#question4").val();
-  //     console.log("hiiiii");
-  //   })
-  //   $("#question5").change(function(){
-  //     q5 = $("#question5").val();
-  //     console.log("hiiiiioooo");
-  //   })
-  //   console.log("what")
-  // });
-// });
 
   //
   //   var trackTitle;
