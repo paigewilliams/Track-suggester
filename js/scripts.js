@@ -26,17 +26,20 @@ $(document).ready(function() {
         if ( q3 === "function" ) {
           if ( q4 ===  "yes" ) {
             if ( q5 === "small"){
-              // trackTitle="Ruby/Rails"
-              // trackImg="img/rubyRails.png"
-            // }
-            console.log("working");
+
+              trackTitle="Ruby/Rails"
+              trackImg="img/rubyRails.png"
+            }
           }
         }
       }
     }
-  }
- });
+    $(".output").show();
+    $("#output img").attr("src", trackImg)
+    $("#output .card-body").html("<h5>"+trackTitle+"</h5>")
+  });
 });
+
 
 
 
@@ -96,8 +99,7 @@ $(document).ready(function() {
   //       }
   //     }
   //   }
-  //   $("#output img").attr("src", trackImg)
-  //   $("#output .card-body").html("<h5>+trackTitle+</h3>")
+
   //   $("#output").show();
   //
 
