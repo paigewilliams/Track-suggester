@@ -1,5 +1,3 @@
-//Back-end (business) logic
-
 //Front-end (User-Interface) logic
 $(document).ready(function() {
   $("form#trackSuggest").submit(function(event){
@@ -46,7 +44,7 @@ $(document).ready(function() {
               if (q5 === "small" || "large") {
                 trackTitle="C#/.NET";
                 trackImg="img/c-sharp.jpg";
-                trackText="You belong wrkking among bigger established businesses, often building internal software. C#/.NET is for you! ";
+                trackText="You belong working among bigger established businesses, often building internal software. C#/.NET is for you! ";
               }
             }
           }
@@ -77,7 +75,8 @@ $(document).ready(function() {
           }
         }
       }
-
+      if (!$("#inputName").val())
+       return false;
       // $("#inputName").change(function(){
       //   $("#inputName").removeClass("alert-danger")
       // });
@@ -85,11 +84,10 @@ $(document).ready(function() {
 
       $(".nameInput").text(name);
       $("#output img").attr("src", trackImg);
-      $("#output .card-body #title").html("<h5>"+trackTitle+"</h5>");
+      $("#output .card-body .card-header #title").html("<h5>"+trackTitle+"</h5>");
       $("#output .card-body .card-text").html("<p>"+trackText+"</p>");
        $(".output").show();
-        if (!$("#inputName").val())
-         return false;
+
 
       event.preventDefault();
     });

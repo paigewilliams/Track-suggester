@@ -11,12 +11,15 @@
   <body>
     <div class="container">
       <div class="content">
-        <div class="row">
-          <h1>Epicodus Track Suggester App</h1>
-          <h3>Take this short quiz to find out with Epicodus track is best for you!</h3>
+        <div class="row" id="top">
+          <div class="col-md-8">
+            <h1>Epicodus Track Suggester App</h1>
+            <h3>Take this short quiz to find out with Epicodus track is best for you!</h3>
+          </div>
         </div>
         <div class="row">
-          <form id="trackSuggest">
+          <div class="col-md">
+            <form id="trackSuggest">
             <div class="form-group">
               <label for="inputName">Please enter your name</label>
               <input type="text" class="form-control form-control-lg" id="inputName" placeholder="Name">
@@ -63,19 +66,23 @@
             </div>
             <button type="submit" class="btn btn-info">Submit</button>
           </form>
-
+          </div>
         </div>
         <div class="row">
-          <div class="output">
+          <div class="col-md-8">
+            <div class="output">
             <h3>Congratulations <span class="nameInput"</span></h3>
             <h3> Yout should take:</h3>
             <div class="card" id="output" style="width: 30rem;">
               <img class="card-img-top" src="" alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title" id="title"> </h5>
+                <div class="card-header">
+                  <h5 class="card-title" id="title"> </h5>
+                </div>  
                 <p class="card-text"> </p>
               </div>
             </div>
+          </div>
           </div>
         </div>
       </div>
