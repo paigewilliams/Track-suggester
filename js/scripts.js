@@ -19,13 +19,24 @@ $(document).ready(function() {
             if ( q5 === "small"){
               trackTitle="Ruby/Rails"
               trackImg="img/rubyRails.png"
+
             }
           }
         }
       }
-
+    } else if ( q1 === "team" ){
+      if (q2 === "back") {
+        if (q3 === "function") {
+          if (q4 === "yes"){
+            if ( q5 === "small"){
+              trackTitle="Ruby/Rails"
+              trackImg="img/rubyRails.png"
+            }
+          }
+        }
+      }
     }
-
+    $
 
     event.preventDefault();
   })
